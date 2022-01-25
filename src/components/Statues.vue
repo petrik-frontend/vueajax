@@ -19,7 +19,7 @@
           <td>{{ statue.price }}</td>
           <td>
             <button @click="deleteStatue(statue.id)">Törlés</button>
-            <button @click="editStatue(statue.id)">Szerkesztés</button>
+            <router-link  :to="'/statues/' + statue.id + '/edit'">Szerkesztés</router-link>
           </td>
         </tr>
         <tr>

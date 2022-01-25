@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Paintings from './components/Paintings.vue';
 import Statues from './components/Statues.vue';
 import Statue from './components/Statue.vue';
+import StatueEdit from './components/StatueEdit.vue';
 import Info from './components/Info.vue';
 
 
@@ -24,6 +25,10 @@ const routes = [
   {
     path: '/statues/:id',
     component: Statue
+  },
+  {
+    path: '/statues/:id/edit',
+    component: StatueEdit
   },
   {
     path: '/info',
